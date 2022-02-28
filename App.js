@@ -33,8 +33,8 @@ export default function App() {
   };
 
   return (
-    <View>
-      <Text>Country Selector</Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>Country Selector</Text>
       {/* <View>
           <Button onClick={() => this.getCountry("france")}>France</Button>
           <Button onClick={() => this.getCountry("brazil")}>Brazil</Button>
@@ -46,10 +46,18 @@ export default function App() {
           displayFlag={state[0].flags.png}
           countryName={state[0].name.common}
           capitalName={state[0].capital}
-          regionName={state[0].population}
-          populationNum={state[0].region}
+          regionName={state[0].region}
+          populationNum={state[0].population}
         />
       )}
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 40,
+    fontWeight: "bold",
+    textAlign: "center",
+  },
+});
