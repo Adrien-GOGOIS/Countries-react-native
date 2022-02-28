@@ -19,6 +19,7 @@ export default function App() {
         .then((res) => res.json())
         .then((res) => {
           setState(res);
+          console.log("RES", res[0].flags.png);
         });
     }
   }, [selectedCountry]);
@@ -43,7 +44,7 @@ export default function App() {
       <Search onChange={onInputChange} />
       {state !== undefined && (
         <Card
-          displayFlag={state[0].flags.png}
+          source={state[0].flags.png}
           countryName={state[0].name.common}
           capitalName={state[0].capital}
           regionName={state[0].region}

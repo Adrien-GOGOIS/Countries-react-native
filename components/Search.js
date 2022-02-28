@@ -24,10 +24,14 @@ const styles = StyleSheet.create({
 
   input: {
     backgroundColor: "rgba(50, 150, 250, 0.7)",
-    width: "25%",
+    width: "50%",
     textAlign: "center",
     height: 30,
     marginTop: 30,
     marginBottom: 30,
+    fontSize: 20,
+    borderRadius: 5,
+    padding: 20,
+    color: "white",
   },
 });
